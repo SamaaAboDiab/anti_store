@@ -13,7 +13,7 @@ A calm, modern online store for a furniture brand. Browse by room, open any piec
 - **Cart**: change quantities, see your savings, and watch a bar fill up as you get close to free delivery. Your cart is saved even if you close the page.
 - **More pages**: collections, a blog, an about page and a contact form that checks your input.
 
-![Shopping by room](docs/shop.jpg)
+![The cart with the free-delivery progress bar](docs/cart.jpg)
 
 ![A product page](docs/product.jpg)
 
