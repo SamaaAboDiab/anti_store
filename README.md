@@ -1,30 +1,51 @@
-# Anti — Furniture Store
+# 🛋️ Anti — Furniture Store
 
-A front-end for a fictional furniture brand, built with **React 19**, **React
-Router 7** and **Tailwind CSS 3** on **Vite**.
+A calm, modern online store for a furniture brand. Browse by room, open any piece to see its details, and add it to your cart.
 
-The UI design was generated with Google Stitch; this project is my
-implementation of it. Products, prices, reviews and contact details are demo
-data.
+**🔗 Live demo:** [antistore.vercel.app](https://antistore.vercel.app)
 
-## Features
+![Anti home page](docs/home.jpg)
 
-- **Shop** with room filters, an "On sale" filter and sorting, all kept in the
-  URL (`/shop?room=bedroom&sort=price-asc`) so filtered views can be shared
-- **Cart** saved in `localStorage` (only `{ slug, qty }`, so prices and images
-  always come from the catalog), with a free-delivery progress bar, sale
-  savings and quick add-to-cart from any product card
-- **Product pages** with sale pricing, quantity, related pieces and a breadcrumb
-- **Blog** with article pages, **Contact** form with inline validation, and a
-  404 page
-- **Responsive** from 320px phones to desktop, with a full-height side drawer
-  menu on small screens
-- **Accessible**: keyboard focus styles, skip link, labelled controls, focus
-  trap in the mobile menu, `prefers-reduced-motion` respected
-- **Fast images**: photos converted from ~1.2 MB PNGs to ~50 KB WebP, with
-  reserved dimensions and lazy loading
+## What you can do
 
-## Getting started
+- **Shop by room**: filter by living room, bedroom, office and more, show items on sale, and sort by price. Your filters stay in the link, so you can share them.
+- **Product pages**: photos, price, materials, sizes, delivery info and related pieces.
+- **Cart**: change quantities, see your savings, and watch a bar fill up as you get close to free delivery. Your cart is saved even if you close the page.
+- **More pages**: collections, a blog, an about page and a contact form that checks your input.
+
+![Shopping by room](docs/shop.jpg)
+
+![A product page](docs/product.jpg)
+
+## Nice touches
+
+- Works on phones, tablets and computers, with a slide-in menu on small screens.
+- Easy to use with a keyboard, and less motion for people who prefer it.
+- Light, fast images that load as you scroll.
+
+## Built with
+
+React 19, React Router 7, Tailwind CSS and Vite.
+
+---
+
+<div dir="rtl">
+
+## 🛋️ Anti — متجر أثاث
+
+متجر أونلاين هادي وعصري لبراند أثاث. تقدر تتصفح المنتجات حسب الأوضة، تفتح أي قطعة وتشوف تفاصيلها، وتضيفها للسلة.
+
+- **تسوّق حسب الأوضة:** فلترة للصالة وأوضة النوم والمكتب وغيرهم، وعرض العروض، وترتيب بالسعر. الفلاتر بتتحفظ في اللينك فتقدر تبعتها لحد.
+- **صفحة المنتج:** صور وسعر وخامات ومقاسات ومعلومات التوصيل وقطع مشابهة.
+- **السلة:** تغيّر الكميات، وتشوف وفّرت قد إيه، وشريط بيوضح فاضلك قد إيه على التوصيل المجاني. والسلة بتفضل محفوظة حتى لو قفلت الصفحة.
+- **صفحات تانية:** الكوليكشنز، والمدونة، ومن نحن، وفورم تواصل بيراجع البيانات.
+- شغال على الموبايل والتابلت والكمبيوتر.
+
+</div>
+
+---
+
+## Run it on your computer
 
 ```bash
 npm install
@@ -33,33 +54,8 @@ npm run dev
 
 Then open http://localhost:5173.
 
-```bash
-npm run build    # production build in dist/
-npm run lint     # oxlint
-```
+> The design was made with Google Stitch, and this project is my build of it. Products, prices and reviews are demo data. Product photos from Unsplash are credited on each product page.
 
-## Project structure
+---
 
-```
-src/
-  pages/        one file per route (Home, Shop, Collections, Product, Cart,
-                About, Blog, BlogPost, Contact, Policies, NotFound)
-  components/   Navbar, Footer, Hero, ProductGrid, Testimonials, …
-  data/         catalog.js (products, rooms), blog.js, reviews.js
-  context/      cart state
-  assets/       optimized WebP photos
-scripts/        image optimization (sharp)
-```
-
-Design tokens (colors `cream`, `ink`, `clay`, `moss`; fonts Fraunces and
-Inter; type scale) live in `tailwind.config.js`.
-
-## Images
-
-Room and studio photos were generated with Google Stitch. Fourteen product
-photos come from [Unsplash](https://unsplash.com) and are credited on each
-product page (`src/assets/products/credits.json`).
-
-The original full-size PNGs are not in this repository. To re-run the WebP
-conversion, put them in `images/` and run `npm run images:optimize` (see the
-`MAP` in `scripts/optimize-images.mjs`).
+Made by **Samaa Abo Diab** · تم التنفيذ بواسطة **سماء أبو دياب** · [LinkedIn](https://www.linkedin.com/in/samaa-abo-diab)
