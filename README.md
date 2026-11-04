@@ -1,8 +1,8 @@
-# 🛋️ Anti — Furniture Store
+<h1><img src="docs/icon.svg" width="44" align="center" alt=""> Anti — Furniture Store</h1>
 
 A calm, modern online store for a furniture brand. Browse by room, open any piece to see its details, and add it to your cart.
 
-**🔗 Live demo:** [antistore.vercel.app](https://antistore.vercel.app)
+**Live demo:** [antistore.vercel.app](https://antistore.vercel.app)
 
 ![Anti home page](docs/home.jpg)
 
@@ -31,7 +31,7 @@ React 19, React Router 7, Tailwind CSS and Vite.
 
 <div dir="rtl">
 
-## 🛋️ Anti — متجر أثاث
+<h2><img src="docs/icon.svg" width="32" align="center" alt=""> Anti — متجر أثاث</h2>
 
 متجر أونلاين هادي وعصري لبراند أثاث. تقدر تتصفح المنتجات حسب الأوضة، تفتح أي قطعة وتشوف تفاصيلها، وتضيفها للسلة.
 
@@ -54,7 +54,7 @@ npm run dev
 
 Then open http://localhost:5173.
 
-> The design was made with Google Stitch, and this project is my build of it. Products, prices and reviews are demo data. Product photos from Unsplash are credited on each product page.
+> I built this site from a UI design I came across and liked, turning it into a working, responsive website. Products, prices and reviews are demo data, and product photos from Unsplash are credited on each product page.
 
 ---
 
